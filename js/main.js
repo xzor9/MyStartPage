@@ -34,7 +34,10 @@ document.getElementById('date').innerHTML=date;
 
 
 // Weather with Openweathermap API
-var link = "https://api.openweathermap.org/data/2.5/weather?q=Montreal&units=metric&apikey=1e8a66173ca137819513552ddab1a77e"
+var key = config.OpenweathermapKey
+var link = "https://api.openweathermap.org/data/2.5/weather?q=Montreal&units=metric&apikey=" + key
+console.log(key)
+console.log(link)
 var request = new XMLHttpRequest();
 request.open('GET',link,true);
 request.onload = function(){
