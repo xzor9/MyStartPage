@@ -1,0 +1,205 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html{
+     font-size: 62.5%;
+}
+
+body {
+     background-color: #2e3440;
+     color: #ffffff;
+     font-family: 'IBM Plex Sans', sans-serif;
+     font-size: 1.5rem;
+     background-image: url(../bg.jpg);
+     background-repeat: no-repeat;
+     background-size: 100%;
+}
+
+a {
+     text-decoration: none;
+     color: #ffffff;
+}
+
+a:hover{
+     color: #000000;
+}
+
+ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+
+li{
+     padding-top: 10px;
+}
+
+h2{
+     padding: 0;
+     border-bottom: 1px solid #ffffff;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main {
+     display: flex;
+     justify-content: center;
+     margin-top: 10%;
+     background-color: #252525;
+     border: 1px solid #ffffff;
+     border-radius: 30px;
+}
+
+.container {
+     display: flex;
+     justify-content: space-around;
+     width: 90%;
+}
+
+.left{
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+}
+
+.topLeft{
+     display: flex;
+     height: fit-content;
+     padding: 5px 75px;
+     justify-content: space-between;
+
+}
+
+.bottomLeft{
+     display: flex;
+     justify-content: space-around;
+     padding: 50px;
+}
+
+.links{
+     background-color: #3b4252;
+     padding: 10px;
+     width: 20%;
+     border-radius: 5px;
+}
+
+.right{
+     display: flex;
+     width: 20%;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: #2e3440;
+     border-radius: 3px;
+}
+
+.right p{
+     text-align: center;
+     padding: 0 10px;
+}
+
+.searchSection{
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     padding-top: 50px;
+}
+
+.form{
+     display: flex;
+}
+
+#search{
+     width: 375px;
+     border-radius: 3px;
+     border: none;
+     padding: 10px;
+     margin-right: 10px;
+     text-align: center;
+}
+
+.button{
+     background-color: #252525;
+     color: white;
+     border: none;
+     border-radius: 3px;
+     padding: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     cursor:pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#time,#date{
+     font-size: 2.5rem;
+}
+
+
+
+
+
+/******************************************
+/* MOBILE
+/*******************************************/
+
+@media all and (max-width: 720px) {
+
+     .left{
+          width: 100%;
+     }
+
+     .topLeft{
+          flex-direction: column;
+          text-align: center;
+          padding: 10px 0;
+     }
+     
+     .bottomLeft{
+          flex-direction: column-reverse;
+     }
+     
+     .links{
+          width: 100%;
+          margin: 0 0 20px 0;
+          border-radius: 15px;
+     }
+
+     .right{
+          display: none;
+     }
+
+     .form{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin: 5px 0;
+     }
+
+     .buttons{
+          text-align: center;
+          padding-top: 10px;
+     }
+   }

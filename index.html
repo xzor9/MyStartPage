@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Start Page</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<main>
+			<section class="container">
+				<section class="left">
+					<section class="topLeft">
+						<span id="time">time</span>
+						<span id="date">date</span>
+					</section>
+					<section class="bottomLeft">
+						<section class="links">
+							<h2>Life</h2>
+							<ul>
+								<li><a href="http://gmail.com">gmail</a></li>
+								<li><a href="http://calendar.google.com">calendar</a></li>
+								<li><a href="https://messages.google.com/web/conversations">messages</a></li>
+								<li><a href="https://www.messenger.com/">messenger</a></li>
+							</ul>
+						</section>
+						<section class="links">
+							<h2>Media</h2>
+							<ul>
+								<li><a href="https://www.youtube.com/">youtube</a></li>
+								<li><a href="https://www.twitch.tv/learnwithleon">twitch</a></li>
+								<li><a href="https://open.spotify.com/">spotify</a></li>
+								<li><a href="https://www.streambeats.com/">streambeats</a></li>
+							</ul>
+						</section>
+						<section class="links">
+							<h2>Info</h2>
+							<ul>
+								<li><a href="http://reddit.com">reddit</a></li>
+								<li><a href="https://forums.redflagdeals.com/">rfd</a></li>
+								<li><a href="https://discord.com/">discord</a></li>
+								<li><a href="https://twitter.com">twitter</a></li>
+							</ul>
+						</section>
+						<section class="links">
+							<h2>Misc</h2>
+							<ul>
+								<li><a href="http://192.168.4.10/admin/index.php">pihole</a></li>
+								<li><a href="https://connect.garmin.com/modern/">garmin</a></li>
+								<li><a href="https://www.strava.com/dashboard">strava</a></li>
+							</ul>
+						</section>
+					</section>
+
+				</section>
+
+				<section class="right">
+					<p><a href="https://openweathermap.org/city/6077243">Current temperature in Montreal: <span id="weather">Weather</span>c</a></p>
+					<span id="weatherIcon">icon</span>
+				</section>				
+			</section>
+		</main>
+
+		<section class="searchSection">
+			<div class="form-container">
+				<form class="form">
+					<input id="search" type="text" class="input" placeholder="search"/>
+					<div class="buttons">
+						<button id="ddg" class="button">ddg</button>
+						<button id="google" class="button">google</button>
+						<button id="reddit" class="button">reddit</button>					
+					</div>
+				</form>		  
+			  </div>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
