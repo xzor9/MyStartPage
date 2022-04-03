@@ -42,19 +42,24 @@ request.onload = function(){
  var obj = JSON.parse(this.response);
  if (request.status >= 200 && request.status < 400) {
     console.log(obj)
-    var temp = obj.main.temp;
+    var temp = Math.round(obj.main.temp);
     document.getElementById('weather').innerHTML=temp;  //display current temperature
 
     var iconCode = obj.weather[0].icon;
     var iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`
 
-    document.getElementById('weatherIcon').innerHTML=`<img src="${iconUrl}">` //insert icon logo
+    document.getElementById('weatherIcon').innerHTML=`<img src="${iconUrl}">` //weather icon
+
+    var iconDescription = obj.weather[0].description;
+    document.getElementById('weatherDescription').innerText=iconDescription  // weather description
  }
  else{
   console.log("Error with the city");
  }
 }
 request.send();
+
+
 
 //Search bar
 
