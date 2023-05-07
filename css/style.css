@@ -119,6 +119,11 @@ main {
      padding: 0 10px;
 }
 
+.right a{
+     text-align: center;
+     padding: 0 10px;
+}
+
 .searchSection{
      display: flex;
      justify-content: center;
